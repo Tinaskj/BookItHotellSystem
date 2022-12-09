@@ -1,0 +1,148 @@
+﻿<UserControl x:Class="BookItHotellSystem.WPF.View.GuestProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookItHotellSystem.WPF.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="625" d:DesignWidth="1000">
+    <Grid>
+        <Border Background="#2e3137" 
+                CornerRadius="20" 
+                Margin="20">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                   
+                        <Grid Grid.Row="0">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                      
+                            <StackPanel Orientation="Vertical"
+                                        Margin="10">
+                                <Label Content="Guest Id:"
+                                           FontSize="15"
+                                           Background="#828487" 
+                                           Margin="5"
+                                           Padding="3"
+                                       Height="25"
+                                           />
+                                <Label Content="Name:"
+                                           FontSize="15"
+                                           Background="#828487" 
+                                           Margin="5"
+                                           Padding="3" 
+                                       Height="25"/>
+                                <Label Content="Adress:"
+                                           FontSize="15"
+                                           Background="#828487" 
+                                           Margin="5"
+                                           Padding="3" 
+                                       Height="25"/>
+                                <Label Content="Phone:"
+                                           FontSize="15"
+                                           Background="#828487" 
+                                           Margin="5"
+                                           Padding="3"
+                                       Height="25"/>
+                                <Label Content="Email:"
+                                           FontSize="15"
+                                           Background="#828487" 
+                                           Margin="5"
+                                           Padding="3" 
+                                       Height="25"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1"
+                             Orientation="Vertical"
+                                        Margin="10
+                                        ">
+                                <TextBox Name="GuestId"
+                                           FontSize="15"
+                                           Background="#aeb2b8" 
+                                           Margin="5"
+                                           Padding="3"
+                                         Height="25"/>
+                                <TextBox Name="nameInput"
+                                           FontSize="15"
+                                           Background="#aeb2b8" 
+                                           Margin="5"
+                                           Padding="3"
+                                         Height="25"/>
+                                <TextBox Name="Adress"
+                                           FontSize="15"
+                                           Background="#aeb2b8" 
+                                           Margin="5"
+                                           Padding="3"
+                                           Height="25"/>
+                                <TextBox Name="Phone"
+                                           FontSize="15"
+                                           Background="#aeb2b8" 
+                                           Margin="5"
+                                           Padding="3"
+                                         Height="25"/>
+                                <TextBox Name="Email"
+                                           FontSize="15"
+                                           Background="#aeb2b8" 
+                                           Margin="5"
+                                           Padding="3"
+                                           Height="25"/>
+                            </StackPanel>
+                       
+                    </Grid>
+                   
+                   
+                        <Grid Grid.Row="1">
+                        <StackPanel>
+                            <TextBox Text="Bookings:"
+                                       FontSize="18"
+                                       Background="#828487" 
+                                       Margin="5"
+                                       Padding="3"/>
+                            <TextBox Name="Bookings"
+                                       FontSize="18"
+                                       Background="#aeb2b8" 
+                                       Margin="5"
+                                       Padding="3"/>
+                        </StackPanel>
+                    </Grid>
+                  
+                </Grid>
+            
+                    <StackPanel Grid.Column="1"
+                        Orientation="Vertical"
+                        Margin="5">
+                        <TextBlock Text="Other info" 
+                                   FontSize="18"
+                                   Background="#828487" 
+                                   Margin="5"
+                                   Padding="3"/>
+                        <TextBox Name="GuestInfo"
+                            HorizontalAlignment="Center"
+                            TextWrapping="Wrap" 
+                            MaxWidth="500" 
+                            VerticalAlignment="Top"
+                            Height="Auto"
+                            FontSize="15"
+                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque orci bibendum volutpat semper. Suspendisse est orci, molestie a eleifend non, auctor sed dolor. Maecenas non vehicula orci."
+                            Background="#aeb2b8" 
+                            Margin="5"
+                            Padding="3"/>
+
+                    </StackPanel>
+               
+            </Grid>
+           
+                
+    </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="BookItHotellSystem.WPF.View.BookingListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookItHotellSystem.WPF.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="625" d:DesignWidth="1000">
+    <Grid>
+        <Border Background="#2e3137" 
+                CornerRadius="20" 
+                Margin="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition Height="55"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBox Width="250"
+                 Height="30"
+                 VerticalContentAlignment="Center"
+                 HorizontalAlignment="Left"
+                 Margin="5"
+                 Grid.Column="1"
+                 Style="{StaticResource SearchBox}"/>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0,0,30,0">
+                    <Button Content="New Guest"
+                HorizontalAlignment="Right"
+                Margin="5"
+                Height="30"
+                Width="80"
+                Click="Add_Guest"
+                Background="#828487"
+                          Style="{StaticResource AddButton}"/>
+                    <Button Content="New Booking"
+                HorizontalAlignment="Right"
+                Margin="5"
+                Height="30"
+                Width="90"
+                Style="{StaticResource AddButton}"
+                            Click="Add_Booking"/>
+                </StackPanel>
+               
+                <Border Grid.Row="1"
+                    Background="#828487" 
+                CornerRadius="5" 
+                Margin="5">
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Booking-Id"
+                       Foreground="Black"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Guest"
+                       Foreground="Black"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Room"
+                       Foreground="Black"
+                       Grid.Column="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Status"
+                       Foreground="Black"
+                       Grid.Column="3"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Check In Date"
+                       Foreground="Black"
+                       Grid.Column="4"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Check Out Date"
+                       Foreground="Black"
+                       Grid.Column="5"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Days"
+                       Foreground="Black"
+                       Grid.Column="6"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Daily Cost"
+                       Foreground="Black"
+                       Grid.Column="7"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                        <TextBlock Text="Total Cost"
+                       Foreground="Black"
+                       Grid.Column="8"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+
+                    </Grid>
+                </Border>
+                <ListView
+                  Background="Transparent"
+                  BorderThickness="0"
+                  Grid.Row="2">
+
+                </ListView>
+
+            </Grid>
+
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddBooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddGuest.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BookingListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GuestList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GuestProfile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RoomList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\AddButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\MenuButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\SearchBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddBooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddGuest.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BookingListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GuestList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GuestProfile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RoomList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

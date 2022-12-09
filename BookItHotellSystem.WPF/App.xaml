@@ -1,0 +1,27 @@
+﻿<Application x:Class="BookItHotellSystem.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BookItHotellSystem.WPF"
+             xmlns:viewModel="clr-namespace:BookItHotellSystem.WPF.ViewModel"
+             xmlns:view="clr-namespace:BookItHotellSystem.WPF.View"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/SearchBox.xaml" />
+                <ResourceDictionary Source="Theme/MenuButton.xaml" />
+                <ResourceDictionary Source="Theme/AddButtonTheme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+           
+            <DataTemplate DataType="{x:Type viewModel:BookingListViewModel }">
+                <view:BookingListView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:GuestListViewModel }">
+                <view:GuestList/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModel:RoomListViewModel }">
+                <view:RoomList/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
